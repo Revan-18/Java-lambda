@@ -16,6 +16,13 @@ public class Greeting {
         Greet myLambda = ()-> System.out.println("Hello there from lambda");
         greeting.greet(myLambda);
 
+        Greet anonymousInnerClass = new Greet() {
+            public void perform() {
+                System.out.println("Hello world from anonymousInnerClass");
+            }
+        };
+
         myLambda.perform();
+        anonymousInnerClass.perform();
     }
 }
