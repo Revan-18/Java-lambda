@@ -24,5 +24,7 @@ public class Greeting {
 
         myLambda.perform();
         anonymousInnerClass.perform();
+
+//        int a = (int a1,int b)->a1+b;   not possible to write this
     }
 }
