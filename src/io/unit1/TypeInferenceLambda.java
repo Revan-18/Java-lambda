@@ -1,4 +1,4 @@
-package io;
+package io.unit1;
 
 public class TypeInferenceLambda {
 

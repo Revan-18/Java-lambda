@@ -1,9 +1,9 @@
-package io;
+package io.unit1;
 
 import java.util.Arrays;
 import java.util.Collections;
-import java.util.Comparator;
 import java.util.List;
+import java.util.function.Predicate;
 
 public class Unit1ExcerciseJava8 {
     public static void main(String[] args) {
@@ -30,7 +30,7 @@ public class Unit1ExcerciseJava8 {
 
     }
 
-    public static void printConditionally(List<Person> person, condition c){
+    public static void printConditionally(List<Person> person, Predicate<Person> c){
         for(Person p:person) {
             if (c.test(p))
                 System.out.println(p);
